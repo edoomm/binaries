@@ -1,0 +1,2 @@
+#!/bin/bash
+google-chrome-stable --profile-directory="Profile 1" https://discord.com/channels/@me
