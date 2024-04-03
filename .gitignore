@@ -3,4 +3,6 @@ openprj
 
 # Ignore other
 ssh-home-server
+ssh-home-server-root
+ssh-home-server-root-slax
 connect-home-server
