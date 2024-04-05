@@ -1,6 +1,7 @@
 # Ignore symlink binaries
 openprj
 
-# Ignore other
+# Ignore home server connections
 ssh-home-server*
 connect-home-server*
+remmina-home-server*
