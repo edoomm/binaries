@@ -1,0 +1,2 @@
+#!/bin/bash
+google-chrome-stable --profile-directory=Default https://teams.microsoft.com/_?culture=en-us&country=us#/conversations/48:notes?ctx=chat
