@@ -1,5 +1,6 @@
 # Ignore symlink binaries
 openprj
+changemicvol
 
 # Ignore connections
 ssh*
