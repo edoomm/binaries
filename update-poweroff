@@ -1,1 +1,1 @@
-pacman -Syu && paccache -r && poweroff
+pacman -Syyu && paccache -r && poweroff
