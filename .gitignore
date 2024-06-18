@@ -1,6 +1,7 @@
 # Ignore symlink binaries
 openprj
 changemicvol
+check_battery
 
 # Ignore connections
 ssh*
