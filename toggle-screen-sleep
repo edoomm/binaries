@@ -1,0 +1,16 @@
+#!/bin/bash
+current_settings=$(xset q | grep DPMS)
+
+if [[ "$current_settings" =~ "Enabled" ]]; then
+	xset -dpms
+	xset s off
+
+	message="Disabled screen sleep and lock"
+	notify-send -u normal -c screen-sleep "$message"
+else
+	xset +dpms
+	xset s on
+
+	message="Enabled screen sleep and lock"
+	notify-send -u normal -c screen-sleep "$message"
+fi
