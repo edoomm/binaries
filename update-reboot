@@ -1,0 +1,1 @@
+pacman -Syyu && paccache -r && reboot
