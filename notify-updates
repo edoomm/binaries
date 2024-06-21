@@ -1,0 +1,8 @@
+#!/bin/bash
+updates=$(checkupdates)
+
+if [[ -z $updates ]]; then
+	notify-send -u normal -c sys-updates "System up to date"
+else
+	notify-send -u normal -c sys-updates "Updates available:" "$updates"
+fi
