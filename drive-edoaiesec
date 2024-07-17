@@ -1,0 +1,2 @@
+#!/bin/bash
+google-chrome-stable --profile-directory=Default https://drive.google.com/drive/u/2/my-drive
