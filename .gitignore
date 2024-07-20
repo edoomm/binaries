@@ -7,3 +7,7 @@ check_battery
 ssh*
 connect*
 remmina*
+
+# AI specific chats
+chatgpt-*
+gemini-*
