@@ -1,2 +1,2 @@
 #!/bin/bash
-firefox --new-window https://chatgpt.com/
+firefox https://chatgpt.com/
