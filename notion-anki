@@ -28,17 +28,10 @@ unzip -q "$MAIN_ZIP" -d "$WORK_DIR"
 # 2. Look for the nested zip file inside the working directory
 NESTED_ZIP=$(find "$WORK_DIR" -name "*.zip" -print -quit)
 
-if [ -z "$NESTED_ZIP" ]; then
-    echo "Error: Could not find a nested zip file inside the archive."
-    # Clean up the folder we just made before exiting
-    rm -rf "$WORK_DIR"
-    exit 1
+if [ -n "$NESTED_ZIP" ]; then
+    unzip -q "$NESTED_ZIP" -d "$WORK_DIR"
 fi
 
-# Extract the inner zip file into the same working directory
-unzip -q "$NESTED_ZIP" -d "$WORK_DIR"
-
-# echo "Removing the first line from all extracted CSV files..."
 # 'find' will locate all CSV files, even inside subfolders
 find "$WORK_DIR" -type f -name "*.csv" | while read -r csv_file; do
     # 'tail' skips the first line (+2 starts at line 2) and saves it back
@@ -56,4 +49,3 @@ rm -rf "$WORK_DIR"
 rm -f "$MAIN_ZIP"
 
 echo "Done!"
-
